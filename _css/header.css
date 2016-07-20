@@ -1,0 +1,182 @@
+/* HEADER STYLES */
+
+/* XS - Extra Small screens / phones 0px to 544px.
+------------------------------------------------------------------------------*/
+.header-wrap {
+    background-color: black;
+    }
+
+.header-content {
+    height: auto;
+    text-align: center;
+}
+
+.header-content .logo {
+    padding: 10px 0px 10px 0px;
+    /*background-color: blue;*/
+}
+
+.header-content .logo img {
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+.mobile-menu-bar {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.mobile-menu-bar .social-icons a {
+    /*padding: 28px 18px 5px 18px;*/
+    padding: 0;
+    padding: 40% 25% 10% 25%;
+}
+
+
+.social-icons li {
+    float: left;
+    width: 20%;
+    padding: 4px;
+    text-align: center;
+}
+
+.social-icons li a {
+    opacity: .5;
+    display: block;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 25px 15px 25px;
+}
+
+.social-icons ul li a img {
+    /*max-width: 50px;
+    height: auto;*/
+}
+
+.jostmenu .form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {}/* end SM screen media query */
+
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+     .header-content {
+        padding: 0;
+        padding-top: 10px;
+        padding-right: 15px;
+        margin-bottom: 0px;
+        height: 120px;
+    }
+    .header-content .logo {
+        /*background-color: grey;*/
+        text-align: left;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .header-content .logo img {
+        padding: 0;
+        margin: 0;
+        width: 45%;
+    }
+    .header-content .social-icons {
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+    .header-content .social-icons ul {
+        height: 40px;
+        margin-left: auto;
+        width: 60%;
+    }
+    .header-content .social-icons ul li {
+        padding-top: 10px;
+        height: 40px;
+        width: 33.333333%;
+
+        float: right;
+    }
+    
+    .header-content .social-icons ul li:first-of-type {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    
+     .header-content .social-icons ul li:last-of-type {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header-content .social-icons ul li a {
+        display: block;
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        padding: 0;
+        margin: 0;
+        transition: all ease .5s;
+    }
+    
+     .header-content .social-icons ul li a:hover {
+         opacity: 1;
+    }
+    
+    .header-content .social-icons ul li a img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-content .form {
+        padding: 0;
+        height: 40px;
+        padding-top: 3px;
+        margin-top: 60px;
+    }
+    
+} /* end MD screen media query */
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    
+     .header-content {
+        height: 140px;
+    }
+    .header-content .social-icons ul li {
+        padding: 10px;
+    }
+    
+} /* end LG screen media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+    
+     .header-content .social-icons ul li {
+       padding: 0; 
+       padding: 15px;
+    }
+    
+}/*end XL media query*/
+
+

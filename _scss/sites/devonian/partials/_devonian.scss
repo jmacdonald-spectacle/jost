@@ -1,0 +1,19 @@
+& {
+	//font-family: $font-family-base;
+	//font-size: $font-size-base;
+	//line-height: $line-height;
+	color: rgb(3,0,15); //$body-color;
+	//background-color: #fefeff; //$body-bg;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+//	font-family: "trajan-pro-3",sans-serif; //$headings-font-family;
+	//font-weight: $headings-font-weight;
+	//line-height: $headings-line-height;
+	//color: $headings-color;
+	&.display {
+		font-family: CorinthiaProfessional-Medium;
+		font-weight: normal;
+		font-style: normal;
+	}
+}

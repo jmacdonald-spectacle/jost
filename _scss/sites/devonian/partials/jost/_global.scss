@@ -1,0 +1,110 @@
+/* GLOBAL STYLES */ 
+
+/* XS - Extra Small screens / phones 0px to 544px.
+------------------------------------------------------------------------------*/
+
+body {
+    font-family: "myriad-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: black;
+}
+
+.trajan {
+    font-family: "trajan-pro-3", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+}
+
+.silver-bg {
+    background: rgba(115, 115, 115, 1);
+    background: -moz-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(115, 115, 115, 1)), color-stop(31%, rgba(196, 194, 196, 1)), color-stop(52%, rgba(214, 214, 214, 1)), color-stop(73%, rgba(196, 194, 196, 1)), color-stop(100%, rgba(115, 115, 115, 1)));
+    background: -webkit-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -o-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: linear-gradient(to right, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#737373', GradientType=1);
+}
+
+.boxed {
+    border: 1px solid #6a6a6a;
+    color: #6a6a6a;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.social {
+    background-color: black;
+}
+
+.search {
+    background-color: black;
+}
+
+.logo {
+    background-color: black;
+}
+
+h1, p {
+    color: #3e3e3e;
+    font-family: "trajan-pro-3", sans-serif;
+}
+
+
+section.main {
+    /*background-color: #2a2a2a;*/
+    color: black;
+}
+
+
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {}/* end SM screen media query */
+
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+    .hide-on-mobile {
+        display: block;
+    }
+    
+    .main {
+        min-height: 600px;
+        height: auto;
+    }
+    
+} /* end MD screen media query */
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {} /* end LG screen media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}/*end XL media query*/
+
+

@@ -1,0 +1,83 @@
+/* SIDEBAR and BUTTON styles */
+
+
+
+aside.page-aside {
+    background-color: transparent;
+}
+
+
+/* GRADIENT BUTTON EFFECTS 
+--------------------------------------*/
+
+button.gradient-btn {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+    margin: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: "trajan", serif;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    transition: all .5s ease;
+    background-size: 100%;
+    background-image: linear-gradient(#fff, #ccc);
+    background: rgba(115, 115, 115, 1);
+    background: -moz-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(115, 115, 115, 1)), color-stop(31%, rgba(196, 194, 196, 1)), color-stop(52%, rgba(214, 214, 214, 1)), color-stop(73%, rgba(196, 194, 196, 1)), color-stop(100%, rgba(115, 115, 115, 1)));
+    background: -webkit-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -o-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    background: linear-gradient(to right, rgba(115, 115, 115, 1) 0%, rgba(196, 194, 196, 1) 31%, rgba(214, 214, 214, 1) 52%, rgba(196, 194, 196, 1) 73%, rgba(115, 115, 115, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#737373', GradientType=1);
+}
+
+button.gradient-btn:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -100;
+    opacity: 0;
+    transition: all .5s ease;
+    /*background-image: linear-gradient(#ccc, #fff);*/
+    background: #737373; /* Old browsers */
+    background: -moz-linear-gradient(left,  #737373 0%, #e0e0e0 23%, #e0e0e0 79%, #737373 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #737373 0%,#e0e0e0 23%,#e0e0e0 79%,#737373 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #737373 0%,#e0e0e0 23%,#e0e0e0 79%,#737373 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#737373',GradientType=1 ); /* IE6-9 */
+}
+
+/* END gradient button effects 
+--------------------------------------*/
+
+section.main-content {
+    background-color: transparent;
+    padding: 0;
+    padding-top: 20px;
+}
+
+section.main-content img {
+    width: 100%;
+}
+
+
+/* LARGER screens 769px to a max of 1200px.  --------------------------------------------------------------------*/
+
+@media only screen and (min-width: 769px) {
+
+button.gradient-btn:hover:before {
+    opacity: 1;
+}
+
+
+    
+}/*end large screen media query*/

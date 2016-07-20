@@ -1,0 +1,115 @@
+/* Site-specific naming */
+
+$jost-black:	rgb(3,0,15);
+$jost-gray:     rgb(180,178,176);
+
+/* Standard naming */
+
+$color-primary:	$jost-black;
+$color-accent:		$jost-gray;
+$color-background:	#fff;
+
+$color-page: 	#fff;
+$color-text:	$jost-black;
+
+$color-text-link:		$color-primary;
+$color-text-heading:	$color-text;
+$color-text-subheading:	$color-text;
+
+$font-family-base:  "myriad-pro","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$font-family-display:	CorinthiaProfessional-Medium;
+$font-family-headings: "trajan-pro-3",sans-serif;
+$font-family-secondary: "garamond-premier-pro",serif;
+
+$color-border: $color-accent;
+/* ---------- Bootstrap variables overrides ---------- */
+
+// Colors
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             $color-primary;//#0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+
+
+// Options
+//$enable-flex:               true;
+
+// Body
+$body-bg:		$color-background;
+$body-color:	$color-text;
+
+// Links
+$link-color:                 $brand-primary;
+$link-decoration:            none;
+$link-hover-color:           $brand-primary;
+$link-hover-decoration:      underline;
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 544px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 100%,		//576px,
+  md: 100%,		//720px,
+  lg: 940px,
+  xl: 1140px
+);
+
+// Grid columns
+$grid-columns:               12;
+$grid-gutter-width:          3rem; //1.875rem; // 30px
+
+// Typograph
+$font-family-base:           $font-family-base;   // set above
+$font-size-root:             16px; //14px;
+$font-size-base:             1rem;
+
+$font-size-h1:               2rem;      // 2.5rem !default;
+$font-size-h2:               1.75rem;   // 2rem !default;
+$font-size-h3:               1.5rem;    // 1.75rem !default;
+$font-size-h4:               1.25rem;   // 1.5rem !default;
+$font-size-h5:               1rem;      // 1.25rem !default;
+$font-size-h6:               .75rem;    // 1rem !default;
+
+$line-height:                1.4;
+$headings-font-family:      $font-family-headings;
+$headings-color:            $color-text-heading;
+
+// Components
+// Navbar
+// Navs
+// Pagination
+// Pager
+// Jumbotron
+// Form states and alerts
+
+// Cards
+$card-spacer-x:            1.25rem;
+$card-spacer-y:            .75rem;
+$card-border-width:        0; //1px;
+$card-border-radius:       0 ; //$border-radius;
+$card-border-color:        #e5e5e5;
+$card-border-radius-inner: $card-border-radius;
+$card-cap-bg:              #f5f5f5;
+$card-bg:                  #fff;
+
+$card-link-hover-color:    #fff;
+
+// Tooltips
+

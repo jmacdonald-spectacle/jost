@@ -1,0 +1,659 @@
+/* CSS for FILTER CONTROLS   */
+/* XS - Extra Small screens / phones 0px to 544px. Inherits styles from GLOBAL
+------------------------------------------------------------------------------*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.desktop-filter-bar-wrap {
+    padding: 0;
+    padding: 10px 0px;
+    height: 50px;
+}
+
+.desktop-filter-bar-wrap h1 {
+    font-size: 25px;
+    width: 70%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-family: "trajan-pro-3", serif;
+    font-weight: normal;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: block;
+}
+
+.filter-toggle {
+    float: right;
+    line-height: 30px;
+    background-color: transparent;
+    border-radius: 0px;
+    width: 115px;
+    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    border-right: 1px rgba(255, 255, 255, 0.4) solid;
+    color: black;
+    font-family: "trajan-pro-3", sans-serif;
+    font-size: 12px;
+    padding-top: 2px;
+    padding: 0;
+    width: auto;
+    float: right;
+    height: auto;
+    line-height: normal;
+    line-height: 22px;
+    margin-top: 7px;
+}
+
+.controls-wrap {
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+form.controls {
+    padding: 0;
+    margin: 0;
+}
+
+
+.panel-group .brand-panel .panel-body fieldset.brand ul li label {
+    color: grey;
+}
+
+.filter-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    /*content: "\e114";*/
+    content: "\e113";
+    float: right;
+    color: grey;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.filter-toggle.collapsed:after{ content:"\e114";}
+
+
+
+
+/* RESET button
+---------------------------*/
+
+button#Reset {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    float: left;
+    height: auto;
+    background-color: white;
+    color: grey;
+    border: thin solid grey;
+    display: block;
+    font-family: "trajan-pro-3", sans-serif;
+    line-height: 10px;
+    padding: 5px;
+}
+
+.btn-show-all h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+/* SEARCH box
+---------------------------*/
+
+.search {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.search input {
+    border: thin solid grey;
+    padding: 5px;
+    font-family: "trajan-pro-3", sans-serif;
+    font-size: 10px;
+}
+
+/* CONTROLS - GLOBAL styles
+------------------------------------- */
+
+.controls-wrap {
+    background-color: white;
+}
+
+button {
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+button.active {
+    background: #666;
+}
+
+button:focus {
+    outline: 0 none;
+}
+
+button + label {
+    margin-left: 1em;
+}
+
+button.btn-show-all {
+    background: black;
+    color: white;
+    transition: background .5s ease;
+    border-radius: 4px;
+    display: block;
+}
+
+fieldset {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 10px;
+    border-radius: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* GENERAL panel styles 
+---------------------------*/
+
+.panel-group {
+    margin: 0;
+}
+
+.panel-group .panel {
+    clear: right;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    font-family: "trajan-pro-3", sans-serif;
+    font-size: 12px;
+    border-top: thin solid grey;
+    margin-bottom: 0px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.panel-group .sort-panel {
+    border-bottom: thin solid grey;
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-group .panel .panel-heading {
+    height: auto;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.panel-group .panel .panel-collapse {
+    margin-bottom: 0px;
+}
+
+h4.panel-title a {
+    display: block;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+    border: none;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+}
+
+h4.panel-title a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.panel-heading a:after {
+    font-family: 'Glyphicons Halflings';
+    /*content: "\e114";*/
+    content: "\e113";
+    float: right;
+    color: grey;
+    font-size: 10px;
+}
+
+.panel-heading a.collapsed:after {
+    /*content: "\e080";*/
+    content: "\e114";
+}
+
+
+/* CHECKBOXES STYLE 
+--------------------------------------------------------*/
+
+
+/* GLOBAL STYLES for Checkboxes */
+
+
+/* the full box itself - behind --- */
+
+.checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    background-color: grey;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.checkbox label {
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.checkbox label:before,
+.checkbox label:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+
+/* the CHECKbox area UNchecked ---*/
+
+.checkbox label:before {
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+}
+
+
+/* the CHECKbox area once CHECKED ---*/
+
+.checkbox label:after {
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* RADIO BUTTONS STYLE 
+--------------------------------------------------------*/
+
+
+/* GLOBAL STYLES for Radio Buttons */
+
+fieldset.radio ul li {
+    color: grey;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+fieldset.radio ul li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+fieldset.radio ul li label {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    z-index: 9;
+    cursor: pointer;
+    margin-left: 25px;
+    line-height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+fieldset.radio ul li .circle {
+    display: block;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+fieldset.radio ul li .circle::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+fieldset.radio ul li input[type=radio]:checked ~ .circle {
+    border: 5px solid black;
+}
+
+fieldset.radio ul li input[type=radio]:checked ~ .circle::before {
+    background: black;
+}
+
+
+/* MOBILE STYLES for Checkboxes ------------------------------------------------ */
+
+
+/* checkbox SIZE: the full box itself - behind --- */
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 9px;
+}
+
+
+/* the CHECKbox area UNchecked ---*/
+
+.checkbox label:before {
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+
+/* the CHECKbox area once CHECKED ---*/
+
+.checkbox label:after {
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+}
+
+.checkbox input:checked ~ label:after {
+    opacity: 1;
+}
+
+.checkbox input:focus ~ label:before {
+    background: #eee;
+}
+
+
+/* CHECKBOX styles SPECIFIC to GROUPINGS....
+------------------------------------------------------------------*/
+
+
+/* STYLE SECTION - checkboxes styling 
+---------------------------*/
+
+fieldset.style .checkbox {
+    margin-right: 35%;
+}
+
+
+/* BRAND SECTION - checkboxes styling 
+---------------------------*/
+
+fieldset.brand .checkbox {
+    margin-right: 14%;
+}
+
+.panel-group .brand-panel fieldset.brand ul li {
+    clear: both;
+    float: none;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+}
+
+.panel-group .brand-panel fieldset.brand .checkbox {
+    width: 100%;
+    background-color: transparent;
+}
+
+.panel-group .brand-panel fieldset.brand .checkbox {
+    text-align: left;
+}
+
+.panel-group .brand-panel fieldset.brand .checkbox label {
+    text-align: left;
+    padding: 0px;
+    font-size: 12px;
+    margin-left: 40px;
+    color: grey;
+}
+
+
+/* REGION SECTION - buttons styling 
+---------------------------*/
+
+.panel-group .region-panel ul li:last-of-type {
+    margin-left: 40px;
+}
+
+
+/* SHOW SECTION -  buttons styling 
+---------------------------*/
+
+
+/* SORT SECTION - radio buttons styling 
+---------------------------*/
+
+.sort-panel fieldset ul li label {
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+}/*end SM media query*/
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {}
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+    
+    .desktop-filter-bar-wrap h1 span {
+        display: inline-block;
+    }
+    
+    .panel-group .panel {
+        /*border-top: none;*/
+        float: left;
+    }
+    
+     #wine-filters {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .sort-panel {
+        padding: 0;
+    }
+    
+    .sort-panel ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+     /* KEEP COLLAPSED MENU ON DESKTOP*/
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    
+    .navbar-collapse.collapse.in {
+        display: block !important; 
+    }
+    /*----------------------------*/
+    
+    /* STYLE checkboxes styling 
+---------------------------*/
+    fieldset.style .checkbox {
+        margin-right: 15%;
+    }
+    
+      /*CHECKBOX styles 
+    -----------------------------------*/
+    /*RADIO button styles 
+    -----------------------------------*/
+    
+    .panel-group .panel fieldset.radio ul li label{
+        font-size: 10px;
+    }
+    
+    fieldset.radio ul li:hover .circle {
+        border: 3px solid black;
+        color: black;
+        cursor: pointer;
+    }
+    fieldset.radio ul li:hover label {
+        color: black;
+    }
+    /* CHECKBOX styles SPECIFIC to GROUPINGS....
+------------------------------------------------------------------*/
+    /* STYLE SECTION - checkboxes styling 
+---------------------------*/
+    .panel-group .style-panel {
+        margin-top: 5px;
+        width: 15%; 
+    }
+    .panel-group .style-panel .panel-body .checkbox label {
+        font-size: 10px;
+        color: grey;
+    }
+    fieldset.style .checkbox {
+        margin-right: 100%;
+    }
+    
+    
+    
+     .panel-group .style-panel {
+        float: right;
+    }
+    
+    .panel-group .sort-panel {
+        float: right;
+        clear: left;
+    }
+    
+    button#Reset { float: right;}
+    .search {float:right; margin-right: 10px;}
+    
+    .desktop-only {
+        display: block;
+    }
+    .mobile-only {
+        display: none;
+    }
+    
+    .controls-wrap {
+        margin-bottom: 40px;
+    }
+
+    .filter-toggle {
+        display: block;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-right: 0px;
+    }
+    
+     .btn-show-all {
+         display: block;
+        float: right;
+    }
+    
+    .panel-group {
+        margin-top: 0px;
+    }
+    .panel-group .panel {
+        width: 20%;
+         border: none;
+        border-top: thin solid grey;
+        padding-top: 10px;
+        font-size: 10px;
+    } 
+    .panel-heading a:after {
+        display: none;
+    }
+    .panel-group .panel .collapse,
+    .panel-group .panel .collapsing,
+    .panel-group .panel .collapse.in {
+        display: block;
+        visibility: visible;
+    }
+    
+    
+}/*end MD screen media query*/
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    
+    
+  
+    
+    
+}/* end LG media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}/*end XL media query*/

@@ -1,0 +1,109 @@
+/* MOBILE MENU styles */ 
+
+/* XS - Extra Small screens / phones 0px to 544px.
+------------------------------------------------------------------------------*/
+
+.jostmenu-toggle {
+    position: absolute;
+    left: 5%;
+    top: 0px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    display: block;
+    line-height: 35px;
+    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    border-right: 1px rgba(255, 255, 255, 0.4) solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "trajan-pro-3", sans-serif;
+    font-size: 12px;
+}
+
+.jostmenu {
+    font-family: "trajan-pro-3", sans-serif;
+    font-weight: 500;
+    border: none;
+    margin: 0;
+    border-radius: 0px;
+    background-color: black;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transition: all .5s ease;
+    left: -480px;
+    top: 35px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.63);
+    z-index: 9999;
+    text-align: center;
+}
+
+.jostmenu.active {
+    left: 0px;
+}
+
+.jostmenu.active .jostmenu-toggle {
+    left: 0px;
+    line-height: 30px;
+    display: block;
+}
+
+.jostmenu .form-group {
+    padding: 10px 10px 0px 10px;
+}
+
+.jostmenu .form-group .form-control {
+    font-size: 12px;
+}
+
+.jostmenu a {
+    color: grey;
+    text-align: center;
+}
+
+.jostmenu ul li a.section-link {
+    border-bottom: 1px black solid;
+    /*border-top: 1px black solid;*/
+    color: black;
+    display: block;
+    line-height: 30px;
+}
+
+.jostmenu ul li a {
+    color: black;
+}
+
+.jostmenu ul li ul li a {
+    color: grey;
+    display: block;
+    line-height: 25px;
+    font-size: 12px;
+    width: 100%;
+}
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {}/* end SM screen media query */
+
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+     .mobile-menu-bar {
+        display: none;
+    }
+} /* end MD screen media query */
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {} /* end LG screen media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}/*end XL media query*/
+
+

@@ -1,0 +1,232 @@
+/* BIG FOUR menu styles
+----------------------------------------------*/
+
+/* XS - Extra Small screens / phones 0px to 544px. Inherits styles from GLOBAL
+------------------------------------------------------------------------------*/
+
+/* Common styles */
+
+.big-four-wrap {
+    height: auto;
+}
+
+.big-four {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.big-four a {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 200px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+
+.big-four a.wines-btn {
+    background-image: url(../_img/jost/wines.jpg);
+}
+
+.big-four a.taste-btn {
+    background-image: url(../_img/jost/taste.jpg);
+}
+
+.big-four a.tour-btn {
+    background-image: url(../_img/jost/tour.jpg);
+}
+
+.big-four a.explore-btn {
+    background-image: url(../_img/jost/explore.jpg);
+}
+
+.big-four a figcaption {
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.big-four a figcaption::before,
+.big-four a figcaption::after {
+    pointer-events: none;
+}
+
+.big-four a figcaption h2 {
+    margin: 0;
+    font-family: "trajan-pro-3", sans-serif;
+    font-size: 20px;
+}
+
+a.effect-zoom figcaption {
+    top: auto;
+    bottom: 0px;
+    height: auto;
+    color: black;
+}
+
+a.effect-zoom h2 {
+    display: inline-block;
+}
+
+a.effect-zoom {
+    -webkit-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {
+    
+    
+     .big-four a {
+        padding-top: 200px;
+        background-size: 160%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50%;
+        float: left;
+        margin: 0;
+        border-left: 1px solid black;
+        /*-top: 1px solid black;
+        border-right: 1px solid black;*/
+    }
+    .big-four a:last-of-type {
+        border-right: 1px solid black;
+    }   
+}/* end SM media query*/
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+     .big-four-wrap {
+        background-color: darkgray;
+        padding: 0;
+        margin: 0;
+        background-image: url(../_img/jost/jost_vineyards-menu-bg-03.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center -25px;
+        background-color: silver;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        position: relative;
+        height: auto;
+    }
+    .big-four-wrap .bottom-border {
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .big-four-wrap .big-four {
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    .big-four-wrap .container {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .big-four a {
+        margin: 0;
+        width: 25%;
+        padding-top: 20%;
+        background-size: 125%;
+        background-position: top center;
+    }
+    
+    .big-four a figcaption {
+        height: 32px;
+    }
+    .big-four a h2 {
+        padding: 0;
+        margin: 0;
+    }
+    a.effect-zoom:hover {
+        background-size: 200%;
+        background-position: top center;
+    }
+    
+    /* WRAPPER COLLAPSE CONTROLS ------------------------ */
+    /* ALL pages except HOME page ------ */
+    .big-four-wrap {
+        height: 33px;
+        overflow: hidden;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        position: relative;
+    }
+    .big-four-wrap:hover {
+        cursor: pointer;
+        height: 170px;
+    }
+    .big-four-wrap .container {
+        /* position: relative;*/
+        height: auto;
+        min-height: 35px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .big-four a figcaption {
+        border-top: 1px solid black;
+        padding: 5px;
+    }
+    
+    /* HOME page specific ------------- */
+    #body-home .big-four-wrap {
+        height: auto;
+        overflow: visible;
+    }
+    
+    #body-home .big-four-wrap:hover {
+        height: auto;
+    }
+    
+    #body-home .big-four-wrap .container {
+        height: auto;
+        position: relative;
+    }
+    
+    .body-home .big-four a figcaption {
+        
+    }
+    
+    /* END WRAPPER COLLAPSE CONTROLS ----------------------- */
+    
+}
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    
+     .big-four-wrap:hover {
+        height: 200px;
+    }
+    
+}
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+    
+     .big-four-wrap:hover {
+        height: 220px;
+    }
+    
+}

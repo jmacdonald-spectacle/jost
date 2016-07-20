@@ -1,0 +1,263 @@
+/* WINE GRID styles
+----------------------------------------------------------------------*/
+
+
+/* CSS for FILTER CONTROLS   */
+/* XS - Extra Small screens / phones 0px to 544px. Inherits styles from GLOBAL
+------------------------------------------------------------------------------*/
+
+
+
+#wine-grid {
+    position: relative;
+    min-height: 250px;
+}
+
+/*FAIL message styles
+--------------------*/
+#wine-grid .fail-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 150ms;
+    -moz-transition: 150ms;
+    transition: 150ms;
+}
+
+#wine-grid .fail-message:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#wine-grid .fail-message span {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+#wind-grid .fail-message span p {
+    font-weight: normal;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#wine-grid.fail .fail-message {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* BLOCKS -  GRID LAYOUT 
+------------------------------------- */
+
+.product-grid {
+    font-size: 0.1px;
+    padding: 0;
+    text-align: left;
+    margin-top: 0px;
+    -webkit-backface-visibility: hidden;
+    /*border-bottom: thin solid grey;*/
+}
+
+.product-grid:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.product-grid .mix,
+.product-grid .gap {
+    display: inline-block;
+    width: 100%;
+}
+
+.product-grid .mix {
+    /* text-align: left;*/
+    margin-bottom: 0;
+    display: none;
+    border: none;
+    border-bottom: thin solid grey;
+    border-left: thin solid grey;
+    border-right: thin solid grey;
+    cursor: pointer;
+}
+
+.product-grid .mix:before {
+    content: '';
+    display: inline-block;
+}
+
+.product-page {
+    background-color: white;
+}
+
+h1 {
+    font-family: "trajan-pro-3", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 30px;
+}
+
+.product-area {
+    background-color: white;
+    border-top: 1px solid grey;
+}
+
+.product-grid {
+    background-color: transparent;
+    height: auto;
+}
+
+.product-block {
+    border-bottom: 1px grey solid;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
+    overflow: hidden;
+    margin-top: 0px;
+    position: relative;
+}
+
+.product-block:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.product-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.product-image {
+    width: 47%;
+    float: left;
+    margin-right: 2%;
+}
+
+.product-description {
+    width: 47%;
+    font-size: 12px;
+    float: left;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.product-description h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "trajan-pro-3", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+}
+
+.product-description .product-mandatories {
+    border-top: 1px grey solid;
+    border-bottom: 1px grey solid;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.product-mandatories .product-size {
+    width: auto;
+    padding-right: 10px;
+    float: left;
+    border-right: 1px solid grey;
+}
+
+.product-mandatories .product-price {
+    width: auto;
+    padding-left: 10px;
+    float: left;
+}
+
+.product-mandatories .product-vineyard {
+    width: auto;
+    clear: both;
+}
+
+.product-block .white-fade {
+    background-image: linear-gradient(to bottom, transparent, white);
+    position: absolute;
+    height: 100px;
+    width: 50%;
+    bottom: 0px;
+    border-bottom: 60px solid white;
+    right: 5%;
+    padding-bottom: 10%;
+}
+
+
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {
+    
+    .product-grid .mix,
+    .product-grid .gap {
+        width: 33.33%;
+    }
+    
+}/* end SM screen media query */
+
+
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+     .product-block {
+        width: 50%;
+        float: left;
+    }
+    
+} /* end MD screen media query */
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    
+    .product-block {
+        width: 33.333333%;
+        float: left;
+    }
+    .product-description h2 {
+        font-size: 12px;
+    }
+    .product-block .white-fade {
+        height: 50px;
+        border-bottom: 35px solid white;
+        padding-bottom: 15%;
+    }
+    
+} /* end LG screen media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}/*end XL media query*/
+
+
+
+

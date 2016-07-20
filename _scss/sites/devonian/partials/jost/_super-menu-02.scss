@@ -1,0 +1,88 @@
+/* SUPER MENU STYLES */ 
+
+/* XS - Extra Small screens / phones 0px to 544px.
+------------------------------------------------------------------------------*/
+
+.supermenu-wrap {
+    background-color: black;
+    height: 30px;
+    /*position: relative;*/
+    padding: 0;
+}
+
+.supermenu-content {
+    position: relative;
+}
+
+.comp-tag {
+    text-transform: uppercase;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 10px;
+    color: grey;
+    width: 80%;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.supermenu-toggle {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 60px;
+    background-image: url(../_img/devonian/devonian.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    top: 0px;
+    right: 0px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border: none;
+    z-index: 9999;
+}
+
+
+/* SM - Small screens / phones 544px to 768px. Inherits styles from XS
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 544px) {}/* end SM screen media query */
+
+
+/* MD - Medium screens / tablets 768px to 992px. Inherits styles from SM
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    
+     .supermenu-wrap {
+        background-color: black;
+        height: 25px;
+    }
+    .supermenu-toggle {
+        width: 35px;
+        height: 100px;
+        top: -40px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        border: none;
+    }
+    .supermenu-toggle:hover {
+        top: -10px;
+    }
+    .comp-tag {
+        margin: 0;
+        line-height: 25px;
+    }
+    
+} /* end MD screen media query */
+
+
+/* LG - Large screens / desktops 992px to 1200px. Inherits styles from MD
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {} /* end LG screen media query */
+
+/* XL - Extra large screens / phones 1200px and larger. Inherits styles from LG
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}/*end XL media query*/
+
+
